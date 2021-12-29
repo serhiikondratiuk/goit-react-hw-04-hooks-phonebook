@@ -1,0 +1,37 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact:not(:last-child) {
+  margin-bottom: 5px;
+}
+.name,
+.number {
+  min-width: 100px;
+  font-family: "Arial";
+  color: white;
+  user-select: none;
+  transition: 0.5s;
+}
+
+.button {
+  color: #03e9f4;
+  background-color: transparent;
+  border-color: #03e9f4;
+  padding: 2px 9px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+  transform: scale(1.1);
+}
